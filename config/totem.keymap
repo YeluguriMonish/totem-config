@@ -14,15 +14,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define Base        0
-#define Media       1
-#define Nav         2
-#define Mouse       3
-#define Sym         4
-#define Num         5
-#define Fun         6
-#define Button      7
-#define Game        8
-#define Gameplus    9
+#define Nav         1
+#define Sym         2
+#define Fun         3
+#define Game        4
+#define Gameplus    5
 
 &mt {
     quick-tap-ms = <100>;
@@ -34,7 +30,7 @@
 &lt {
     tapping-term-ms = <240>;
     flavor = "balanced";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <300>;
 };
 
 / {
@@ -45,7 +41,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <124>;
+            quick-tap-ms = <300>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
